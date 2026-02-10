@@ -22,8 +22,8 @@ Her madde için kanıt satırı:
   - Kanıt:
 - [ ] Haftalık sprint döngüsü kurulmuş (haftada 1 deliverable)
   - Kanıt:
-- [ ] Journal sistemi aktif (her hafta 1 dosya)
-  - Kanıt:
+- [x] Journal sistemi aktif (her hafta 1 dosya)
+  - Kanıt:proofs/03-ml/repeat-purchase-system.md
 - [ ] Concepts sistemi aktif (her kavram dosyası TR+EN)
   - Kanıt:
 - [ ] Progress tracker (checklist) çalışıyor, kanıtsız tik yok
@@ -391,14 +391,14 @@ Her madde için kanıt satırı:
   - Kanıt:
 - [ ] Loss nedir? neyi optimize eder?
   - Kanıt:
-- [ ] Train/Val/Test ayrımı
-  - Kanıt:
-- [ ] Overfitting / underfitting
-  - Kanıt:
+- [x] Train/Val/Test ayrımı
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
+- [x] Overfitting / underfitting
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
 - [ ] Bias–variance sezgisi
   - Kanıt:
-- [ ] Leakage örnekleri
-  - Kanıt:
+- [x] Leakage örnekleri
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
 
 ## VII.2 Klasik Modeller (Somut)
 - [ ] Linear regression
@@ -409,22 +409,22 @@ Her madde için kanıt satırı:
   - Kanıt:
 - [ ] Random forest
   - Kanıt:
-- [ ] Gradient boosting sezgisi
-  - Kanıt:
+- [x] Gradient boosting sezgisi
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
 
 ## VII.3 Metric Kanunu
 - [ ] Regression metrics (MAE/MSE/RMSE/R2)
   - Kanıt:
-- [ ] Classification metrics (precision/recall/F1/ROC-AUC)
-  - Kanıt:
-- [ ] Threshold seçimi sezgisi
-  - Kanıt:
+- [x] Classification metrics (precision/recall/F1/ROC-AUC)
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
+- [x] Threshold seçimi sezgisi
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
 
 ## VII.4 Error Analysis (Zorunlu)
-- [ ] Confusion matrix yorumlama
-  - Kanıt:
-- [ ] Slices (alt gruplar) analizi
-  - Kanıt:
+- [x] Confusion matrix yorumlama
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
+- [x] Slices (alt gruplar) analizi
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
 - [ ] Ablation düşüncesi
   - Kanıt:
 
@@ -1091,12 +1091,12 @@ Her madde için kanıt satırı:
 ## XVI.1 Capstone A — End-to-End ML System
 - [ ] Dataset oluşturuldu
   - Kanıt:
-- [ ] Training pipeline çalışıyor
-  - Kanıt:
-- [ ] Evaluation pipeline çalışıyor
-  - Kanıt:
-- [ ] Serving (API) çalışıyor
-  - Kanıt:
+- [x] Training pipeline çalışıyor
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
+- [x] Evaluation pipeline çalışıyor
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
+- [x] Serving (API) çalışıyor
+  - Kanıt: proofs/03-ml/repeat-purchase-system.md
 - [ ] Observability (metrics/logging) var
   - Kanıt:
 - [ ] Reproducible runs (seed, config, tracking)
