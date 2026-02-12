@@ -136,7 +136,20 @@ Her madde için kanıt satırı:
 
 # III. MATEMATİK KANUNU (ML İÇİN MATEMATİK)
 
+## III.0 Numerical Foundations (Sayısal Akıcılık)
+
+- [x] Square root computation
+  - [x] perfect squares
+  - [x] decimal → fraction dönüşümü
+  - [x] √(a/b) kuralı
+  - [x] ordering preservation (√a < √b)
+  - Kanıt:
+    - proofs/02-math/2026-02-square-root-proof.md
+
+---
+
 ## III.1 Linear Algebra (ML Odak)
+
 - [ ] Scalar / Vector / Matrix tanımı ve sezgisi
   - Kanıt:
 - [ ] Vector operations
@@ -147,9 +160,13 @@ Her madde için kanıt satırı:
   - [ ] geometrik anlam (benzerlik)
   - [ ] cosine similarity bağlantısı
   - Kanıt:
-- [ ] Norms
-  - [ ] L2 norm sezgisi
+- [x] Norms
+  - [x] L1 norm
+  - [x] L2 norm sezgisi
+  - [x] unit vector kavramı
+  - [x] L1 ≥ L2 gözlemi
   - Kanıt:
+    - proofs/02-math/2026-02-linear-algebra-norms-proof.md
 - [ ] Matrix multiplication
   - [ ] shape kuralları
   - [ ] linear layer bağlantısı
@@ -158,10 +175,16 @@ Her madde için kanıt satırı:
   - [ ] “önemli yönler” fikri
   - Kanıt:
 
+---
+
 ## III.2 Probability & Statistics (ML Odak)
+
 - [ ] Random variable
   - Kanıt:
-- [ ] Distribution (normal, bernoulli, categorical sezgisi)
+- [ ] Distribution
+  - [ ] normal
+  - [ ] bernoulli
+  - [ ] categorical
   - Kanıt:
 - [ ] Expectation, variance
   - Kanıt:
@@ -172,7 +195,10 @@ Her madde için kanıt satırı:
 - [ ] Likelihood vs probability
   - Kanıt:
 
+---
+
 ## III.3 Calculus & Optimization (Yeterli Seviye)
+
 - [ ] Derivative sezgisi (eğim)
   - Kanıt:
 - [ ] Partial derivatives sezgisi
@@ -191,6 +217,7 @@ Her madde için kanıt satırı:
 # IV. YAZILIM MÜHENDİSLİĞİ (PRODUCTION HABITS)
 
 ## IV.1 Git ve Akış
+
 - [ ] Branching stratejisi (main/dev/feature)
   - Kanıt:
 - [ ] Commit standardı (mesaj, küçük commit)
@@ -198,7 +225,10 @@ Her madde için kanıt satırı:
 - [ ] PR kültürü (self-review checklist)
   - Kanıt:
 
+---
+
 ## IV.2 Kod Kalitesi
+
 - [ ] Lint + format standardı (black/ruff vb.)
   - Kanıt:
 - [ ] Type checking (mypy/pyright vb.)
@@ -208,7 +238,10 @@ Her madde için kanıt satırı:
 - [ ] Error handling (fail fast, clear exceptions)
   - Kanıt:
 
+---
+
 ## IV.3 Testing (Zorunlu)
+
 - [ ] Unit test nedir? neyi ölçer?
   - Kanıt:
 - [ ] Integration test nedir?
@@ -220,13 +253,19 @@ Her madde için kanıt satırı:
 - [ ] Mocking sezgisi
   - Kanıt:
 
+---
+
 ## IV.4 Paketleme ve Konfig
+
 - [ ] pyproject / requirements disiplini
   - Kanıt:
+
 - [ ] Config yönetimi (env + config file)
   - Kanıt:
+
 - [ ] Secrets yönetimi (repo’ya secret koymama)
   - Kanıt:
+
 
 ---
 
