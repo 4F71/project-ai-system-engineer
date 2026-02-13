@@ -57,3 +57,5 @@ L2 = √(0.3² + 0.4²) = √(0.09 + 0.16) = √0.25 = 0.5
 Unit vector check:
 A unit vector satisfies ||v||₂ = 1.  
 Here ||v||₂ = 0.5, so v is not a unit vector.
+
+Evidence: proofs/02-math/assets/vectors-demo.png, proofs/02-math/assets/l1-vs-l2-path.png, scripts/math/norm_demo.py, scripts/math/vector_plot_demo.py, scripts/math/norm_distance_demo.py

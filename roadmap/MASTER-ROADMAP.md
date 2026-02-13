@@ -23,9 +23,13 @@ Her madde için kanıt satırı:
 - [ ] Haftalık sprint döngüsü kurulmuş (haftada 1 deliverable)
   - Kanıt:
 - [x] Journal sistemi aktif (her hafta 1 dosya)
-  - Kanıt:proofs/03-ml/repeat-purchase-system.md
-- [ ] Concepts sistemi aktif (her kavram dosyası TR+EN)
   - Kanıt:
+        - proofs/03-ml/repeat-purchase-system.md 
+        - docs/journal/2026-02-Week02.md
+- [ ] Concepts sistemi aktif (her kavram dosyası TR+EN)
+  - Kanıt: 
+      - docs/concepts/00b-numerical-foundations-square-root-TR.md
+      - docs/concepts/02-linear-algebra-norms.md
 - [ ] Progress tracker (checklist) çalışıyor, kanıtsız tik yok
   - Kanıt:
 - [ ] “Şişirme yasağı” uygulanıyor (gereksiz dosya/klasör yok)
@@ -167,6 +171,12 @@ Her madde için kanıt satırı:
   - [x] L1 ≥ L2 gözlemi
   - Kanıt:
     - proofs/02-math/2026-02-linear-algebra-norms-proof.md
+    - scripts/math/norm_demo.py
+    - scripts/math/vector_plot_demo.py
+    - scripts/math/norm_distance_demo.py
+    - proofs/02-math/assets/vectors-demo.png
+    - proofs/02-math/assets/l1-vs-l2-path.png
+    
 - [ ] Matrix multiplication
   - [ ] shape kuralları
   - [ ] linear layer bağlantısı

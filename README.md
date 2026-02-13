@@ -64,3 +64,8 @@ Early stage by design.
 Structure first, then depth.
 
 Progress is intentional, not rushed.
+
+
+---
+
+Licensed under the MIT License. See LICENSE for details.
