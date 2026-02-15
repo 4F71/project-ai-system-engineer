@@ -150,6 +150,40 @@ Her madde için kanıt satırı:
   - Kanıt:
     - proofs/02-math/2026-02-square-root-proof.md
 
+- [x] Floating point equality refleksi
+  - [x] 0.1 + 0.2 fenomeni
+  - [x] == vs np.isclose
+  - Kanıt:
+    - proofs/02-math/2026-02-numerical-awareness-convergence-proof.md
+    - scripts/math/numerical_awareness_convergence_lab.ipynb
+    - docs/concepts/03-numerical-awareness-in-ml-systems.md
+
+- [x] Absolute vs Relative tolerance sezgisi
+  - [x] atol vs rtol farkı
+  - [x] NumPy tolerance formülü
+  - Kanıt:
+    - proofs/02-math/2026-02-numerical-awareness-convergence-proof.md
+    - docs/concepts/03-numerical-awareness-in-ml-systems.md
+
+- [x] Scale-relative thinking
+  - [x] delta / loss oranı
+  - [x] farklı ölçeklerde eşik davranışı
+  - Kanıt:
+    - proofs/02-math/2026-02-numerical-awareness-convergence-proof.md
+
+- [x] Convergence decision tasarımı
+  - [x] absolute stop vs relative stop
+  - [x] np.isclose ile karar
+  - Kanıt:
+    - scripts/math/numerical_awareness_convergence_lab.ipynb
+
+- [x] Norm-based stopping intuition
+  - [x] grad_norm < const kırılganlığı
+  - [x] grad_norm / param_norm yaklaşımı
+  - Kanıt:
+    - proofs/02-math/2026-02-numerical-awareness-convergence-proof.md
+
+
 ---
 
 ## III.1 Linear Algebra (ML Odak)
