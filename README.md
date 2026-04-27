@@ -15,37 +15,37 @@ This is a **structured system** designed to show:
 
 ## How to Read This Repository
 
-If you are an HR, senior engineer, or reviewer:
+> **Note:** For detailed architectural rules, file addition decision trees, and validation checklists, refer to the [`docs/architecture/REPO-USAGE.md`](docs/architecture/REPO-USAGE.md) manual.
 
-1. **Start with the roadmap**
-   - `roadmap/MASTER-ROADMAP.md`
-   - This defines *what* is being learned and *why*.
+This repository is divided into strict architectural layers:
 
-2. **Check progress**
-   - `progress-tracker.md`
-   - Only completed items with evidence are checked.
-
-3. **Review proofs**
-   - `proofs/`
-   - Each completed topic is backed by code, logs, or commits.
-
-4. **Look at applied work**
-   - `projects/`
-   - End-to-end systems and capstone implementations.
-
-5. **See learning discipline**
-   - `docs/journal/` and `docs/retrospectives/`
-   - Shows consistency, reflection, and iteration.
+- **`roadmap/`**
+  The plan. Contains `MASTER-ROADMAP.md`, the absolute single source of truth for all planned and completed work.
+- **`proofs/`**
+  The core. Verifiable evidence of acquired skills (code, logs, mathematical artifacts).
+- **`projects/`**
+  End-to-end applied systems and capstone implementations.
+- **`docs/`**
+  The written system. Contains weekly journals (`journal/`) and deep-dive conceptual learning (`concepts/`).
+- **`scenarios/`**
+  Problem framing exercises, tradeoffs, and system design thinking.
+- **`scripts/`**
+  Helper tools, automations, and engineering utilities.
+- **`resources/`**
+  Curated input materials and reference lists.
+- **`private/`**
+  Internal workflows, prompts, and raw thoughts. (Excluded from the public narrative).
 
 ---
 
 ## Design Principles
 
-- No unchecked claims
-- No progress without evidence
-- No unnecessary complexity
-- Clear separation of public and private thinking
+> **The Golden Rule:** README tells the story → Templates provide the structure → Contents prove the claim.
 
+- **No unchecked claims:** If it's not proven with evidence, it doesn't exist.
+- **Single Source of Truth:** `MASTER-ROADMAP.md` is the only valid tracker.
+- **Anti-Bloat:** No unnecessary complexity. If it doesn't serve the path, it gets deleted.
+- **Clear separation** of public outcomes and private thinking.
 ---
 
 ## What This Repo Is *Not*

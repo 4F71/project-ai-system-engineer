@@ -24,10 +24,10 @@ Her madde için kanıt satırı:
   - Kanıt:
 - [x] Journal sistemi aktif (her hafta 1 dosya)
   - Kanıt:
-        - proofs/03-ml/repeat-purchase-system.md 
+        - proofs/03-ml/repeat-purchase-system.md
         - docs/journal/2026-02-Week02.md
 - [ ] Concepts sistemi aktif (her kavram dosyası TR+EN)
-  - Kanıt: 
+  - Kanıt:
       - docs/concepts/00b-numerical-foundations-square-root-TR.md
       - docs/concepts/02-linear-algebra-norms.md
 - [ ] Progress tracker (checklist) çalışıyor, kanıtsız tik yok
@@ -210,7 +210,7 @@ Her madde için kanıt satırı:
     - scripts/math/norm_distance_demo.py
     - proofs/02-math/assets/vectors-demo.png
     - proofs/02-math/assets/l1-vs-l2-path.png
-    
+
 - [ ] Matrix multiplication
   - [ ] shape kuralları
   - [ ] linear layer bağlantısı
@@ -313,9 +313,17 @@ Her madde için kanıt satırı:
 
 ---
 
-# V. PYTHON SYSTEM ENGINEERING
+# V. PYTHON FUNDAMENTALS (A1-A2)
 
-## V.1 Temel Araçlar
+## V.1 Temel Sözdizimi (Raw Coding)
+- [x] Basic I/O, Strings, Variables (AI yardımsız kanıtlandı)
+  - Kanıt: proofs/01-python/01-word-analyzer/analyzer.py
+
+---
+
+# V+ (EK) PYTHON SYSTEM ENGINEERING
+
+## V+.1 Temel Araçlar
 - [ ] venv/poetry/uv gibi bir standardı seçip uygulama
   - Kanıt:
 - [ ] CLI yazma (argparse/typer)

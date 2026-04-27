@@ -1,259 +1,266 @@
-<!-- File: private/REPO-USAGE.md -->
-# REPO-USAGE (PRIVATE)
-## “Ne eklersem neyi düzeltmeliyim?” Kullanım Kılavuzu
+<!-- File: docs/architecture/REPO-USAGE.md -->
+# REPO-USAGE
+## "What to Update When Adding Files" Manual
 
-> Bu doküman **sadece benim için** yazılmıştır.  
-> Amaç: Bu repoya yeni bir şey eklerken **neyi nereye koyacağımı**, **hangi standarda göre yazacağımı** ve **eklerken neleri düzeltmem gerektiğini** netleştirmek.  
-> Bu repo bir “not deposu” değil; **kanıtlanabilir mühendislik ilerleme sistemi**.
-
----
-
-## 0) Altın Kural
-**README anlatır → Template şekil verir → İçerik kanıtlar.**  
-Bu üçü birbirinin yerine geçmez.
+> This document is written **primarily for myself**.
+> Purpose: To clarify **where to put what**, **which standard to follow**, and **what else needs updating** when adding something new to this repo.
+> This repository is not a "note dump"; it is a **verifiable engineering progression system**.
 
 ---
 
-## 1) Repo Katmanları (Kısa Harita)
-- `docs/` → süreç + düşünce + karar + öğrenme (yazılı sistem)
-- `projects/` → uçtan uca sistemler (entegre uygulama)
-- `proofs/` → doğrulanabilir kanıtlar (odaklı çıktılar)
-- `roadmap/` → plan (tek doğrusu `MASTER-ROADMAP.md`)
-- `scenarios/` → problem çerçeveleme egzersizleri (kod şart değil)
-- `scripts/` → yardımcı araçlar (destek)
-- `resources/` → seçilmiş kaynak listeleri (girdi)
-- `private/` → iç işleyiş, promptlar, düşünce logları (vitrine çıkmaz)
+## 0) The Golden Rule
+**README tells the story → Template provides the structure → Content proves the claim.**  
+These three cannot substitute for one another.
 
 ---
 
-## 2) Dosya Ekleme Karar Ağacı
-Yeni bir şey yazacağım. Nereye koyacağım?
-
-### A) “Bu bir haftalık kayıt mı?”
-- **Evet** → `docs/journal/YYYY-MM-WeekNN.md`
-
-### B) “Bu bir öğrenme notu / kavram açıklaması mı?”
-- **Evet** → `docs/concepts/NN-topic-name.md`
-
-### C) “Bu, iddia ettiğim bir yetkinliğin kanıtı mı?”
-- **Evet** → `proofs/<domain>/...`
-
-### D) “Bu, çalışan bir sistem / entegrasyon / capstone mu?”
-- **Evet** → `projects/<capstone>/...`
-
-### E) “Bu bir problem senaryosu mu (çerçeveleme + tradeoff)?”
-- **Evet** → `scenarios/<level>/scenario-XX-...md`
-
-### F) “Bu bir yardımcı script mi?”
-- **Evet** → `scripts/<scope>/...`
-
-### G) “Bu dış kaynak listesi mi?”
-- **Evet** → `resources/*.md`
-
-### H) “Bu, tamamen kişisel çalışma düzenim mi?”
-- **Evet** → `private/`
+## 1) Repository Layers (Short Map)
+- `docs/` → process + thought + decision + learning (the written system)
+- `projects/` → end-to-end systems (integrated applications)
+- `proofs/` → verifiable evidence (focused outputs)
+- `roadmap/` → the plan (single source of truth: `MASTER-ROADMAP.md`)
+- `scenarios/` → problem framing exercises (code not strictly required)
+- `scripts/` → helper tools (support)
+- `resources/` → curated lists of resources (inputs)
+- `private/` → internal workings, prompts, thought logs (excluded from public narrative)
 
 ---
 
-## 3) Template Kullanım Kuralları
-Template’ler **minimal format** sağlar. Rehberlik README’dedir.
+## 2) File Addition Decision Tree
+I am going to write something new. Where do I put it?
 
-Kullanım eşlemesi:
+### A) "Is this a weekly log?"
+- **Yes** → `docs/journal/YYYY-MM-WeekNN.md`
+
+### B) "Is this a learning note / concept explanation?"
+- **Yes** → `docs/concepts/NN-topic-name.md`
+
+### C) "Is this proof of an asserted skill?"
+- **Yes** → `proofs/<domain>/...`
+
+### D) "Is this a working system / integration / capstone?"
+- **Yes** → `projects/<capstone>/...`
+
+### E) "Is this a problem scenario (framing + tradeoff)?"
+- **Yes** → `scenarios/<level>/scenario-XX-...md`
+
+### F) "Is this a helper script?"
+- **Yes** → `scripts/<scope>/...`
+
+### G) "Is this an external resource list?"
+- **Yes** → `resources/*.md`
+
+### H) "Is this strictly my personal working setup?"
+- **Yes** → `private/`
+
+---
+
+## 3) Template Usage Rules
+Templates provide **minimal format**. Guidance belongs in the README.
+
+Usage mapping:
 - Journal → `docs/templates/journal-template.md`
 - Concept → `docs/templates/concept-template.md`
 - Retrospective → `docs/templates/retrospective-template.md`
 - Proof → `docs/templates/proof-template.md`
 - Scenario → `scenarios/_templates/scenario-template.md`
 
-**Kural:** Template’in içine “nasıl yazılır” eklenmez.  
-“Nasıl yazılır” README’de kalır.
+**Rule:** "How to write" instructions are not added inside the template.  
+"How to write" stays in the respective directory's README.
 
 ---
 
-## 4) İsimlendirme Standardı (Değişmez)
+## 4) Naming Standard (Immutable)
 ### Journal
 - `docs/journal/YYYY-MM-WeekNN.md`
-- Örn: `2026-02-Week02.md`
+- Ex: `2026-02-Week02.md`
 
 ### Retrospective
 - `docs/retrospectives/YYYY-MM-retro.md`
-- Örn: `2026-02-retro.md`
+- Ex: `2026-02-retro.md`
 
 ### Concepts
 - `docs/concepts/NN-topic-name.md`
-- Örn: `01-linear-algebra-vectors.md`
+- Ex: `01-linear-algebra-vectors.md`
 
 ### Scenarios
 - `scenarios/<level>/scenario-XX-short-title.md`
-- Örn: `scenario-01-churn-prediction.md`
+- Ex: `scenario-01-churn-prediction.md`
 
-### ADR (ileride)
+### ADR (future)
 - `docs/architecture/adr/YYYY-MM-DD-short-title.md`
 
 ---
 
-## 5) “Ne eklersem neyi düzeltmeliyim?” — Zorunlu Kontrol Listeleri
+## 5) "What to Update When Adding Files" — Mandatory Checklists
 
-### 5.1 Yeni bir Journal eklersem
-**Ekle:**
+### 5.1 When adding a new Journal
+**Add:**
 - `docs/journal/YYYY-MM-WeekNN.md`
 
-**Düzelt / Kontrol et:**
-- Journal içinde geçen tüm linkler gerçek mi?
+**Fix / Check:**
+- Are all links within the journal real?
   - `projects/...`
   - `proofs/...`
   - `roadmap/...`
-- “Bu hafta çıktı” dediğim şeyin en az biri şu olmalı:
-  - bir proof dosyası
-  - bir scenario dosyası
-  - bir project güncellemesi
-  - ya da net bir ADR / runbook
+- The "deliverables this week" must include at least one of the following:
+  - a proof file
+  - a scenario file
+  - a project update
+  - or a clear ADR / runbook
 
-**Kalite eşiği:**
-- “Ne yaptım?” → somut
-- “Ne öğrendim?” → spesifik
-- “Kanıt” → dosya yolu ile
+**Quality Threshold:**
+- "What did I do?" → concrete
+- "What did I learn?" → specific
+- "Evidence" → via file path
 
 ---
 
-### 5.2 Yeni bir Concept eklersem
-**Ekle:**
+### 5.2 When adding a new Concept
+**Add:**
 - `docs/concepts/NN-...md`
 
-**Düzelt / Kontrol et:**
-- Concept’in sonunda şu bağlantılardan en az biri olmalı:
-  - ilgili `proofs/...`
-  - ilgili `projects/...`
-- Eğer concept bir roadmap maddesini kapatıyorsa:
-  - roadmap’te sadece “okudum” diye değil,
-  - “kanıtım var” diye işaretlenmeli (kanıt: proof veya proje linki)
+**Fix / Check:**
+- The concept must end with at least one of these links:
+  - related `proofs/...`
+  - related `projects/...`
+- If the concept closes a roadmap item:
+  - Do not just mark it as "read" in the roadmap,
+  - It must be marked as "proven" (evidence: proof or project link)
 
-**Kalite eşiği:**
-- tanım + sezgi + mini örnek + hata noktası + bağlantı
+**Quality Threshold:**
+- definition + intuition + mini example + failure point + linkage
 
 ---
 
-### 5.3 Yeni bir Proof eklersem
-**Ekle:**
+### 5.3 When adding a new Proof
+**Add:**
 - `proofs/<domain>/...md`
 
-**Düzelt / Kontrol et:**
-- Proof bir “iddia” içeriyor mu?
-- İddia kanıtlanıyor mu?
-  - ölçüm / sonuç / demo / karşılaştırma / çıktı
-- Proof dosyasında:
-  - varsayımlar
-  - sınırlar
-  - tekrar üretim yolu (gerekirse script linki)
-- Eğer proof bir project’ten türediyse:
-  - project README’den bu proof’a link ver (kopyalama yok, link var)
+**Fix / Check:**
+- Does the proof contain a "claim"?
+- Is the claim proven?
+  - measurement / result / demo / comparison / output
+- Inside the proof file:
+  - assumptions
+  - constraints
+  - reproduction path (script link if necessary)
+- If the proof is derived from a project:
+  - link to this proof from the project README (no copying, just linking)
 
-**Kalite eşiği:**
-- “Sadece yazı” yetmez → bir kanıt izi olmalı (çıktı, metrik, örnek, karşılaştırma).
+**Quality Threshold:**
+- "Text only" is not enough → there must be an evidence trail (output, metric, example, comparison).
 
 ---
 
-### 5.4 Yeni bir Project günceller / eklersen
-**Ekle:**
+### 5.4 When updating / adding a new Project
+**Add:**
 - `projects/<capstone>/...`
 
-**Düzelt / Kontrol et:**
-- Proje README’si güncel mi?
-  - sınırlar
+**Fix / Check:**
+- Is the project README up to date?
+  - boundaries
   - input/output
-  - değerlendirme
-  - ilgili proof’lar
-- Proje içinde “artifact” dosyaları varsa (async interview gibi):
-  - bunlar proof değil → README’de açıkça etiketle
-- Proje büyüdükçe:
-  - `docs/architecture` tarafına ADR/C4 eklemek mantıklı mı?
+  - evaluation
+  - related proofs
+- If there are "artifact" files within the project (like an async interview):
+  - these are not proofs → explicitly label them in the README
+- As the project grows:
+  - is it logical to add ADR/C4 to the `docs/architecture` side?
 
-**Kalite eşiği:**
-- “Çalışan sistem” anlatısı → net sınırlar + değerlendirme + linkler.
+**Quality Threshold:**
+- "Working system" narrative → clear boundaries + evaluation + links.
 
 ---
 
-### 5.5 Yeni bir Scenario eklersen
-**Ekle:**
+### 5.5 When adding a new Scenario
+**Add:**
 - `scenarios/<level>/scenario-XX-...md`
 
-**Düzelt / Kontrol et:**
-- Senaryoda:
-  - hedef
-  - varsayımlar
-  - kısıtlar
-  - ölçüt / başarı tanımı
-  - riskler / failure mode
-- Eğer senaryo bir proof’a dönüşürse:
-  - `proofs/...` içine taşıma değil,
-  - proof oluşturup scenario’dan proof’a link koy
+**Fix / Check:**
+- In the scenario:
+  - goal
+  - assumptions
+  - constraints
+  - metric / definition of success
+  - risks / failure mode
+- If the scenario turns into a proof:
+  - do not move it into `proofs/...`,
+  - create a proof and link from the scenario to the proof
 
-**Kalite eşiği:**
-- Kod şart değil; **mühendislik düşüncesi** şart.
+**Quality Threshold:**
+- Code is not mandatory; **engineering thought process** is mandatory.
 
 ---
 
-### 5.6 Yeni bir Script eklersen
-**Ekle:**
+### 5.6 When adding a new Script
+**Add:**
 - `scripts/<scope>/...`
 
-**Düzelt / Kontrol et:**
-- Script başına kısa header:
-  - ne yapar
-  - giriş/çıkış
-  - varsayım
-- Script bir proof/proje için yazıldıysa:
-  - ilgili dosyadan script’e link ver
+**Fix / Check:**
+- Short header per script:
+  - what it does
+  - input/output
+  - assumption
+- If the script was written for a proof/project:
+  - provide a link from the related file to the script
 
-**Kalite eşiği:**
-- küçük, odaklı, tekrar kullanılabilir.
-
----
-
-## 6) Commit Disiplini (Özet)
-Bu repo commit’leri **hikâye** anlatır.
-
-**Kural: Bir commit = tek mantıksal adım.**  
-Karıştırma örnekleri (yasak):
-- README düzeni + yeni proof aynı commit ❌
-- Journal + büyük refactor aynı commit ❌
-
-### İdeal commit ayrımları
-- “README sistemi” → tek commit
-- “WeekNN journal” → tek commit
-- “Yeni proof” → tek commit
-- “Proje milestone” → tek commit
-- “Refactor/cleanup” → tek commit
-
-**Commit mesajları için standart:** `private/prompts/commit-standard.md`
+**Quality Threshold:**
+- small, focused, reusable.
 
 ---
 
-## 7) Haftalık Çalışma Rutini (Pratik Sistem)
-> Amaç: Roadmap → Output → Proof → Journal döngüsünü kilitlemek
+## 6) Commit Discipline (Summary)
+The commits in this repo tell a **story**.
 
-### Her hafta minimum:
+**Rule: One commit = one logical step.**  
+Mixing examples (forbidden):
+- README formatting + new proof in the same commit ❌
+- Journal + massive refactor in the same commit ❌
+
+### Ideal commit separations
+- "README system" → single commit
+- "WeekNN journal" → single commit
+- "New proof" → single commit
+- "Project milestone" → single commit
+- "Refactor/cleanup" → single commit
+
+**Standard for commit messages:** `private/prompts/commit-standard.md`
+
+---
+
+## 7) Weekly Work Routine (Practical System)
+> Goal: To lock in the Roadmap → Output → Proof → Journal cycle
+
+### Every week at a minimum:
 1) 1 Journal (`docs/journal/...`)
-2) 1 Proof **veya** 1 Scenario
-3) Roadmap’te en az 1 madde “kanıt linki” ile güncelle
+2) 1 Proof **or** 1 Scenario
+3) Update at least 1 item on the Roadmap with an "evidence link"
 
-### Ay sonu:
+### End of month:
 - 1 Retrospective (`docs/retrospectives/...`)
 
 ---
 
-## 8) En Sık Hatalar (Kendime Uyarı)
-- “Öğrendim” deyip kanıt linki vermemek
-- Proof yerine uzun anlatı yazmak
-- Project’i proof gibi anlatmak
-- Her şeyi tek commit’e yığmak
-- Template’i rehber haline getirmek (yasak)
+## 8) Most Common Mistakes (Self-Warning)
+- Saying "I learned this" without providing an evidence link
+- Writing a long narrative instead of a Proof
+- Explaining a Project as if it were a Proof
+- Piling everything into a single commit
+- Using a template as a guide (forbidden)
 
 ---
 
-## 9) Hızlı Komutlar (PowerShell)
-### Durum kontrol
+## 9) Quick Commands (PowerShell)
+### Status check
 ```powershell
 git status
 git diff
 git diff --cached
+```
+
+### Typical Commit Cycle
+```powershell
+git add <file>
+git commit -m "Brief summary" -m "Detailed explanation (why?)"
+```
